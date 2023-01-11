@@ -1,0 +1,21 @@
+'listSum.smallbasic
+'By Davis Graham
+
+'Prompts for user to specify a range of numbers to add together.
+    TextWindow.WriteLine("Please specify a range of numbers to add together.")
+    TextWindow.WriteLine("")
+    TextWindow.WriteLine("Start value is:")
+        startValue = TextWindow.Read()
+    TextWindow.WriteLine("")
+    TextWindow.WriteLine("End value is:")
+        endValue = TextWindow.Read()
+    TextWindow.WriteLine("")
+
+'Loop that adds user specified range of numbers together.
+    for currentValue = startValue to endValue
+        resultValue = resultValue + currentValue
+    EndFor
+
+'Prints result of for loop
+    TextWindow.WriteLine("Result: " + resultValue)
+    TextWindow.WriteLine("")
